@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,11 +28,11 @@ const Navigation = () => {
       )}
     >
       <div className="container-custom flex items-center justify-between">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <h1 className="text-navy font-bold text-xl md:text-2xl">
             The Analyst's Edge
           </h1>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -53,6 +54,12 @@ const Navigation = () => {
           >
             Pricing
           </a>
+          <Link
+            to="/add-ons"
+            className="text-charcoal font-medium hover:text-navy transition-colors"
+          >
+            Add-Ons
+          </Link>
           <a
             href="#faqs"
             className="text-charcoal font-medium hover:text-navy transition-colors"
@@ -96,6 +103,13 @@ const Navigation = () => {
             >
               Pricing
             </a>
+            <Link
+              to="/add-ons"
+              className="text-charcoal font-medium py-2 hover:text-navy transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Add-Ons
+            </Link>
             <a
               href="#faqs"
               className="text-charcoal font-medium py-2 hover:text-navy transition-colors"
