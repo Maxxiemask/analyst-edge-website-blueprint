@@ -136,10 +136,12 @@ const AddOns = () => {
     });
   };
 
+  console.log("AddOns page rendering"); // Debug log
+
   return (
     <div className="bg-background min-h-screen">
       <Navigation />
-      <main>
+      <main className="pt-20"> {/* Added padding-top to ensure content is below navigation */}
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-navy to-[#16437E] text-white py-16 md:py-24">
           <div className="container-custom text-center">
@@ -158,7 +160,7 @@ const AddOns = () => {
 
         {/* Bundle Pricing */}
         <section className="py-12 bg-gradient-radial from-white to-gray-50">
-          <div className="container-custom text-center mb-12">
+          <div className="container mx-auto px-4 text-center mb-12"> {/* Changed to standard container class */}
             <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4 animate-on-scroll">
               Premium Bundle Options
             </h2>
@@ -242,7 +244,7 @@ const AddOns = () => {
 
         {/* All Add-Ons */}
         <section className="py-16 bg-white">
-          <div className="container-custom">
+          <div className="container mx-auto px-4"> {/* Changed to standard container class */}
             <h2 className="text-2xl md:text-3xl font-bold text-navy mb-12 text-center animate-on-scroll">
               Individual Add-Ons & Enhancements
             </h2>

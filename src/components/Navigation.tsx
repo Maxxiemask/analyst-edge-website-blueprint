@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -21,13 +21,13 @@ const Navigation = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full",
         isScrolled
           ? "bg-white/95 backdrop-blur-sm shadow-sm py-3"
           : "bg-transparent py-5"
       )}
     >
-      <div className="container-custom flex items-center justify-between">
+      <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <h1 className="text-navy font-bold text-xl md:text-2xl">
             The Analyst's Edge
@@ -80,7 +80,7 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 animate-fade-in z-50">
           <nav className="flex flex-col space-y-4">
             <a
               href="#about"
