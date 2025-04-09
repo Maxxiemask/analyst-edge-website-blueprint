@@ -14,17 +14,15 @@ const AddOns = () => {
   const handleAddOn = (title: string, action: string) => {
     toast({
       title: `${action} - ${title}`,
-      description: `You selected to ${action.toLowerCase()} for ${title}`,
-      duration: 3000,
+      description: `You selected to ${action.toLowerCase()} for ${title}. This would ${action === "Preview" ? "show a demo" : "add this item to your cart"}`,
+      duration: 4000,
     });
   };
 
-  console.log("AddOns page rendering"); // Debug log
-
   return (
-    <div className="bg-background min-h-screen">
+    <div className="bg-background min-h-screen flex flex-col">
       <Navigation />
-      <main className="pt-20"> {/* Added padding-top to ensure content is below navigation */}
+      <main className="flex-grow pt-20 pb-16"> {/* Added padding-top and bottom */}
         <HeroSection />
         <BundlePricing />
         <AddOnsList onActionSelected={handleAddOn} />
