@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h2 className="text-xl font-bold mb-4">The Analyst's Edge</h2>
             <p className="text-gray-300 text-sm mb-6">
-              Comprehensive eBooks and resources to master data analysis from Excel to machine learning.
+              Comprehensive courses and resources to master data analysis from Excel to machine learning.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -39,7 +39,7 @@ const Footer = () => {
             <h3 className="font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About the Course</a></li>
-              <li><a href="#ebooks" className="text-gray-300 hover:text-white transition-colors">eBook Modules</a></li>
+              <li><a href="#courses" className="text-gray-300 hover:text-white transition-colors">Course Modules</a></li>
               <li><a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
               <li><a href="#faqs" className="text-gray-300 hover:text-white transition-colors">FAQs</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>

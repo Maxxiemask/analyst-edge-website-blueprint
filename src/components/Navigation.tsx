@@ -43,10 +43,10 @@ const Navigation = () => {
             About
           </a>
           <a
-            href="#ebooks"
+            href="#courses"
             className="text-charcoal font-medium hover:text-navy transition-colors"
           >
-            eBooks
+            Courses
           </a>
           <a
             href="#pricing"
@@ -54,12 +54,6 @@ const Navigation = () => {
           >
             Pricing
           </a>
-          <Link
-            to="/add-ons"
-            className="text-charcoal font-medium hover:text-navy transition-colors"
-          >
-            Add-Ons
-          </Link>
           <a
             href="#faqs"
             className="text-charcoal font-medium hover:text-navy transition-colors"
@@ -90,11 +84,11 @@ const Navigation = () => {
               About
             </a>
             <a
-              href="#ebooks"
+              href="#courses"
               className="text-charcoal font-medium py-2 hover:text-navy transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              eBooks
+              Courses
             </a>
             <a
               href="#pricing"
@@ -103,13 +97,6 @@ const Navigation = () => {
             >
               Pricing
             </a>
-            <Link
-              to="/add-ons"
-              className="text-charcoal font-medium py-2 hover:text-navy transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Add-Ons
-            </Link>
             <a
               href="#faqs"
               className="text-charcoal font-medium py-2 hover:text-navy transition-colors"

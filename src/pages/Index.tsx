@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import AboutCourse from "@/components/AboutCourse";
-import EbookModules from "@/components/EbookModules";
+import CoursesModules from "@/components/CoursesModules";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import { useToast } from "@/components/ui/use-toast";
@@ -33,7 +33,7 @@ const Index = () => {
     setTimeout(() => {
       toast({
         title: "Welcome to The Analyst's Edge",
-        description: "Discover our premium eBooks for data analytics.",
+        description: "Discover our premium courses for data analytics.",
         duration: 5000,
       });
     }, 2000);
@@ -47,7 +47,7 @@ const Index = () => {
       <main>
         <Hero />
         <AboutCourse />
-        <EbookModules />
+        <CoursesModules />
         <Pricing />
       </main>
       <Footer />
