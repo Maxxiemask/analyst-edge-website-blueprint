@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, BookOpen } from "lucide-react";
+import { ChevronRight, BookOpen, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -18,27 +18,23 @@ const Hero = () => {
       </div>
       
       <div className="container-custom relative z-10 pt-20">
-        <div className="max-w-3xl">
-          <h3 className="text-gold font-medium mb-2 animate-fade-in">
-            Professional Data Analytics Course
-          </h3>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in" style={{animationDelay: "0.1s"}}>
-            Become a Data Analyst.<br />
-            One eBook at a Time.
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
+            Launch Your Data Analyst Career with Affordable, Expert-Led Courses
           </h1>
-          <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl animate-fade-in" style={{animationDelay: "0.2s"}}>
-            Practical, project-based learning from Excel to Machine Learning.
-            Master industry-standard tools and techniques through our comprehensive
-            15-book series designed for aspiring analysts.
+          <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-3xl animate-fade-in" style={{animationDelay: "0.1s"}}>
+            Transform your career with structured learning paths designed by industry experts. 
+            Build in-demand skills at a fraction of the cost of traditional bootcamps - starting from just £47.
           </p>
-          <div className="flex flex-wrap gap-4 animate-fade-in" style={{animationDelay: "0.3s"}}>
+          
+          <div className="flex flex-wrap gap-4 mb-12 animate-fade-in" style={{animationDelay: "0.2s"}}>
             <Button
               size="lg"
               className="bg-gold hover:bg-gold/90 text-navy font-medium flex items-center gap-2"
               asChild
             >
-              <a href="#ebooks">
-                <BookOpen size={18} /> View eBooks
+              <a href="#learning-paths">
+                <TrendingUp size={18} /> Start Your Journey
               </a>
             </Button>
             <Button
@@ -48,29 +44,38 @@ const Hero = () => {
               asChild
             >
               <a href="#pricing">
-                Buy Full Bundle <ChevronRight size={16} />
+                View Pricing <ChevronRight size={16} />
               </a>
             </Button>
           </div>
           
-          <div className="mt-16 flex flex-wrap items-center gap-8 text-sm text-gray-200 animate-fade-in" style={{animationDelay: "0.4s"}}>
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                <BookOpen className="text-white" size={24} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-200 animate-fade-in" style={{animationDelay: "0.3s"}}>
+            <div className="flex items-center gap-3 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+              <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
+                <BookOpen className="text-gold" size={20} />
               </div>
-              <span>15 Comprehensive<br />eBooks</span>
+              <div>
+                <div className="font-semibold text-white">16 Expert Modules</div>
+                <div>Comprehensive curriculum</div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <div className="flex items-center gap-3 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+              <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gold"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
               </div>
-              <span>Industry-Recognized<br />Skills</span>
+              <div>
+                <div className="font-semibold text-white">Career-Ready Skills</div>
+                <div>Industry-recognized expertise</div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+            <div className="flex items-center gap-3 bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+              <div className="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gold"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
               </div>
-              <span>Real-World<br />Projects</span>
+              <div>
+                <div className="font-semibold text-white">Self-Paced Learning</div>
+                <div>Learn on your schedule</div>
+              </div>
             </div>
           </div>
         </div>
