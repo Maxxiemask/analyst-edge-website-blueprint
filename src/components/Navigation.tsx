@@ -29,7 +29,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <h1 className="text-navy font-bold text-xl md:text-2xl">
+          <h1 className="text-slate-900 font-bold text-xl md:text-2xl">
             The Analyst's Journey
           </h1>
         </Link>
@@ -38,22 +38,22 @@ const Navigation = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a
             href="#featured"
-            className="text-charcoal font-medium hover:text-blue-600 transition-colors"
+            className="text-slate-700 font-medium hover:text-teal-600 transition-colors"
           >
             Resources
           </a>
           <a
             href="#about"
-            className="text-charcoal font-medium hover:text-blue-600 transition-colors"
+            className="text-slate-700 font-medium hover:text-teal-600 transition-colors"
           >
             About
           </a>
-          <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
+          <Button className="bg-teal-600 hover:bg-teal-700">Get Started</Button>
         </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-navy"
+          className="md:hidden text-slate-900"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -66,19 +66,19 @@ const Navigation = () => {
           <nav className="flex flex-col space-y-4">
             <a
               href="#featured"
-              className="text-charcoal font-medium py-2 hover:text-blue-600 transition-colors"
+              className="text-slate-700 font-medium py-2 hover:text-teal-600 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Resources
             </a>
             <a
               href="#about"
-              className="text-charcoal font-medium py-2 hover:text-blue-600 transition-colors"
+              className="text-slate-700 font-medium py-2 hover:text-teal-600 transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
-            <Button className="w-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
+            <Button className="w-full bg-teal-600 hover:bg-teal-700">Get Started</Button>
           </nav>
         </div>
       )}

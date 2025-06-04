@@ -18,27 +18,27 @@ const Newsletter = () => {
       setIsSubscribed(true);
       toast({
         title: "Successfully subscribed!",
-        description: "You'll be the first to know about new resources and bundles.",
+        description: "You'll be the first to know about new resources and content.",
       });
       setEmail("");
     }
   };
 
   return (
-    <section className="section-padding bg-blue-600 text-white">
+    <section className="section-padding bg-slate-900 text-white">
       <div className="container-custom">
-        <Card className="max-w-2xl mx-auto border-0 shadow-2xl bg-white text-charcoal animate-on-scroll">
+        <Card className="max-w-2xl mx-auto border-0 shadow-2xl bg-white text-slate-700 animate-on-scroll">
           <CardContent className="p-8 md:p-12 text-center">
-            <div className="mx-auto mb-6 p-4 bg-blue-100 rounded-full w-fit">
-              <Mail className="h-8 w-8 text-blue-600" />
+            <div className="mx-auto mb-6 p-4 bg-teal-100 rounded-full w-fit">
+              <Mail className="h-8 w-8 text-teal-600" />
             </div>
             
-            <h2 className="text-2xl md:text-3xl font-bold text-navy mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
               Stay Updated on the Journey
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              Get notified when new eBooks, tutorials, and bundles are available. 
-              Plus, receive exclusive learning tips from my own data analysis journey.
+            <p className="text-slate-600 mb-8 leading-relaxed">
+              Get notified when new eBooks, tutorials, and resources are available. 
+              Plus, receive insights from my ongoing data analysis learning journey.
             </p>
             
             {isSubscribed ? (
@@ -54,11 +54,11 @@ const Newsletter = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 border-gray-300"
+                  className="flex-1 border-slate-300"
                 />
                 <Button 
                   type="submit" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2 px-6"
+                  className="bg-teal-600 hover:bg-teal-700 text-white flex items-center gap-2 px-6"
                 >
                   <Send size={16} />
                   Subscribe
@@ -66,7 +66,7 @@ const Newsletter = () => {
               </form>
             )}
             
-            <p className="text-xs text-gray-500 mt-4">
+            <p className="text-xs text-slate-500 mt-4">
               No spam, ever. Unsubscribe anytime with one click.
             </p>
           </CardContent>
