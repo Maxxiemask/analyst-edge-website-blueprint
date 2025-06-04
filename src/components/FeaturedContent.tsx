@@ -48,7 +48,7 @@ const FeaturedContent = () => {
                   className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center gap-2"
                   asChild
                 >
-                  <a href="https://gumroad.com/your-free-guide" target="_blank" rel="noopener noreferrer">
+                  <a href="https://dlahtalk.gumroad.com/l/yclpyi" target="_blank" rel="noopener noreferrer">
                     <Download size={16} />
                     Download Free Guide
                   </a>
@@ -57,18 +57,18 @@ const FeaturedContent = () => {
             </Card>
           </div>
 
-          {/* Featured eBook */}
+          {/* Excel for Analysts */}
           <div className="animate-on-scroll">
-            <Card className="h-full border-2 border-blue-200 bg-blue-50/50 hover:shadow-lg transition-all duration-300">
+            <Card className="h-full border-2 border-green-300 bg-green-100/50 hover:shadow-lg transition-all duration-300">
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
-                  <FileSpreadsheet className="h-8 w-8 text-blue-600" />
+                <div className="mx-auto mb-4 p-3 bg-green-200 rounded-full w-fit">
+                  <FileSpreadsheet className="h-8 w-8 text-green-700" />
                 </div>
-                <Badge variant="secondary" className="bg-blue-100 text-blue-700 border-0 mb-2 w-fit mx-auto">
+                <Badge variant="secondary" className="bg-green-200 text-green-800 border-0 mb-2 w-fit mx-auto">
                   FEATURED
                 </Badge>
                 <h3 className="text-xl font-bold text-navy mb-2">
-                  Excel for Analysis
+                  Excel for Analysts
                 </h3>
                 <p className="text-gray-600 text-sm">
                   Master Excel functions, pivot tables, and data analysis techniques for business insights.
@@ -82,15 +82,15 @@ const FeaturedContent = () => {
                   <div>✓ Real business case studies</div>
                 </div>
                 
-                <div className="text-2xl font-bold text-blue-600 mb-4">£7.99</div>
+                <div className="text-2xl font-bold text-green-700 mb-4">£7.99</div>
                 
                 <Button 
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-2"
+                  className="w-full bg-green-700 hover:bg-green-800 text-white flex items-center gap-2"
                   asChild
                 >
-                  <a href="https://gumroad.com/excel-for-analysis" target="_blank" rel="noopener noreferrer">
+                  <a href="https://dlahtalk.gumroad.com/l/xqdhfh" target="_blank" rel="noopener noreferrer">
                     <ShoppingCart size={16} />
-                    Buy Now
+                    Buy Now – £7.99
                   </a>
                 </Button>
               </CardContent>
