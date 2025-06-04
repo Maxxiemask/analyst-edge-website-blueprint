@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,14 +66,14 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        navy: "#0A2540",
+        navy: "#1e3a8a",
         gold: "#D4AF37",
-        charcoal: "#333333",
-        lightblue: "#7FB5FF",
+        charcoal: "#374151",
+        lightblue: "#60a5fa",
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Montserrat', 'Inter', 'sans-serif'],
+        heading: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',

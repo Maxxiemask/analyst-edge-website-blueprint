@@ -1,19 +1,17 @@
 
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Github, Twitter, Linkedin, Youtube, Instagram, Send } from "lucide-react";
+import { Github, Twitter, Linkedin, Youtube, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="bg-navy text-white">
       <div className="container-custom py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h2 className="text-xl font-bold mb-4">The Analyst's Edge</h2>
+            <h2 className="text-xl font-bold mb-4">The Analyst's Journey</h2>
             <p className="text-gray-300 text-sm mb-6">
-              Comprehensive courses and resources to master data analysis from Excel to machine learning.
+              Learn data analysis from someone doing it in real time. Affordable, beginner-friendly resources that grow with you.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -38,51 +36,28 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About the Course</a></li>
-              <li><a href="#courses" className="text-gray-300 hover:text-white transition-colors">Course Modules</a></li>
-              <li><a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#faqs" className="text-gray-300 hover:text-white transition-colors">FAQs</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div className="lg:col-span-1">
-            <h3 className="font-medium mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Free Excel Templates</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Sample Dashboards</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Blog Articles</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Data Sets</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Success Stories</a></li>
+              <li><a href="#featured" className="text-gray-300 hover:text-white transition-colors">Free Resources</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
           {/* Newsletter */}
           <div className="lg:col-span-1">
-            <h3 className="font-medium mb-4">Subscribe to Newsletter</h3>
-            <p className="text-gray-300 text-sm mb-4">
-              Get free tips, updates and offers straight to your inbox.
-            </p>
-            <div className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="Your email address"
-                className="bg-navy/40 border-gray-700 text-white placeholder:text-gray-400"
-              />
-              <Button size="icon" className="bg-gold hover:bg-gold/90 text-navy">
-                <Send size={16} />
-              </Button>
-            </div>
+            <h3 className="font-medium mb-4">Learning Journey</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">My Progress</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Study Notes</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Resources</a></li>
+            </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© 2025 The Analyst's Edge. All rights reserved.</p>
+          <p>© 2025 The Analyst's Journey. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

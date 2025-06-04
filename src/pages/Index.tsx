@@ -2,11 +2,10 @@
 import React, { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import AboutCourse from "@/components/AboutCourse";
-import LearningPaths from "@/components/LearningPaths";
-import CoursesModules from "@/components/CoursesModules";
-import Testimonials from "@/components/Testimonials";
-import Pricing from "@/components/Pricing";
+import FeaturedContent from "@/components/FeaturedContent";
+import About from "@/components/About";
+import ComingSoon from "@/components/ComingSoon";
+import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -34,8 +33,8 @@ const Index = () => {
     // Welcome toast notification
     setTimeout(() => {
       toast({
-        title: "Welcome to The Analyst's Edge",
-        description: "Launch your data analyst career with our expert-led courses.",
+        title: "Welcome to The Analyst's Journey",
+        description: "Learn data analysis from someone doing it in real time.",
         duration: 5000,
       });
     }, 2000);
@@ -48,11 +47,10 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <LearningPaths />
-        <AboutCourse />
-        <CoursesModules />
-        <Testimonials />
-        <Pricing />
+        <FeaturedContent />
+        <About />
+        <ComingSoon />
+        <Newsletter />
       </main>
       <Footer />
     </div>
