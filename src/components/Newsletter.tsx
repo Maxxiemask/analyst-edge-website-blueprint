@@ -8,17 +8,21 @@ import { useToast } from "@/components/ui/use-toast";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Here you would integrate with your newsletter service
-      setIsSubscribed(true);
+      const subject = "Newsletter Subscription - The Analyst's Journey";
+      const body = `Hi,\n\nI would like to stay updated on your data analysis journey.\n\nMy email address is: ${email}\n\nThanks!`;
+      const mailtoLink = `mailto:analystsjourney@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      window.open(mailtoLink);
+      setIsSubmitted(true);
       toast({
-        title: "Successfully subscribed!",
-        description: "You'll be the first to know about new resources and content.",
+        title: "Email client opened!",
+        description: "Please send the email from your email client to complete the subscription.",
       });
       setEmail("");
     }
@@ -37,14 +41,14 @@ const Newsletter = () => {
               Stay Updated on the Journey
             </h2>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Get notified when new eBooks, tutorials, and resources are available. 
-              Plus, receive insights from my ongoing data analysis learning journey.
+              Enter your email and we'll open your email client to send a subscription request. 
+              You'll receive insights from my ongoing data analysis learning journey.
             </p>
             
-            {isSubscribed ? (
+            {isSubmitted ? (
               <div className="flex items-center justify-center gap-3 text-green-600">
                 <CheckCircle size={20} />
-                <span className="font-medium">Thanks for subscribing!</span>
+                <span className="font-medium">Email client opened! Please send the email to complete subscription.</span>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -67,7 +71,7 @@ const Newsletter = () => {
             )}
             
             <p className="text-xs text-slate-500 mt-4">
-              No spam, ever. Unsubscribe anytime with one click.
+              This will open your email client to send a subscription request.
             </p>
           </CardContent>
         </Card>
