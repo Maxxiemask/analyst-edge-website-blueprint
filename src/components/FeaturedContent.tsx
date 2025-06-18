@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Download, ShoppingCart, FileSpreadsheet, Gift, Database, PieChart, Code, Github, BookOpen, Package } from "lucide-react";
+import { Download, ShoppingCart, FileSpreadsheet, Gift, Database, PieChart, Code, Github, BookOpen, Package, Brain, Lightbulb } from "lucide-react";
 
 const FeaturedContent = () => {
   return (
@@ -81,6 +80,39 @@ const FeaturedContent = () => {
                 asChild
               >
                 <a href="https://dlahtalk.gumroad.com/l/xqdhfh" target="_blank" rel="noopener noreferrer">
+                  <ShoppingCart size={16} />
+                  Buy Now
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* NEW: The Ultimate Excel Troubleshooting Guide */}
+        <div className="mb-12 animate-on-scroll">
+          <Card className="border-2 border-green-300 bg-green-100/50 hover:shadow-lg transition-all duration-300 max-w-2xl mx-auto">
+            <CardHeader className="text-center pb-4">
+              <div className="mx-auto mb-4 p-3 bg-green-200 rounded-full w-fit">
+                <FileSpreadsheet className="h-8 w-8 text-green-700" />
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-2 text-center">The Ultimate Excel Troubleshooting Guide</h3>
+              <p className="text-2xl font-bold text-green-700 mb-2">£9.99</p>
+              <p className="text-gray-600 text-sm mb-4">
+                Master Excel problem-solving with comprehensive troubleshooting techniques and solutions.
+              </p>
+            </CardHeader>
+            
+            <CardContent className="text-center">
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>✔ Common Excel errors & fixes</div>
+                <div>✔ Performance optimization tips</div>
+              </div>
+              
+              <Button 
+                className="w-full bg-green-700 hover:bg-green-800 text-white flex items-center gap-2"
+                asChild
+              >
+                <a href="https://dlahtalk.gumroad.com/l/hfoyd" target="_blank" rel="noopener noreferrer">
                   <ShoppingCart size={16} />
                   Buy Now
                 </a>
@@ -280,6 +312,39 @@ const FeaturedContent = () => {
                 asChild
               >
                 <a href="https://dlahtalk.gumroad.com/l/bujkc" target="_blank" rel="noopener noreferrer">
+                  <ShoppingCart size={16} />
+                  Buy Now
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* NEW: Prompt Engineering for Data Analysts */}
+        <div className="mb-12 animate-on-scroll">
+          <Card className="border-2 border-green-300 bg-green-100/50 hover:shadow-lg transition-all duration-300 max-w-2xl mx-auto">
+            <CardHeader className="text-center pb-4">
+              <div className="mx-auto mb-4 p-3 bg-green-200 rounded-full w-fit">
+                <Brain className="h-8 w-8 text-green-700" />
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-2 text-center">Prompt Engineering for Data Analysts: The Definitive Guide</h3>
+              <p className="text-2xl font-bold text-green-700 mb-2">£15.99</p>
+              <p className="text-gray-600 text-sm mb-4">
+                Master AI-powered analysis with advanced prompt engineering techniques for data professionals.
+              </p>
+            </CardHeader>
+            
+            <CardContent className="text-center">
+              <div className="space-y-2 mb-6 text-sm text-gray-600">
+                <div>✔ AI prompt optimization strategies</div>
+                <div>✔ Data analysis automation techniques</div>
+              </div>
+              
+              <Button 
+                className="w-full bg-green-700 hover:bg-green-800 text-white flex items-center gap-2"
+                asChild
+              >
+                <a href="https://dlahtalk.gumroad.com/l/uwlzc" target="_blank" rel="noopener noreferrer">
                   <ShoppingCart size={16} />
                   Buy Now
                 </a>
