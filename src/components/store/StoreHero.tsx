@@ -9,8 +9,9 @@ const StoreHero = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-navy via-slate-800 to-slate-900 text-white py-20 mt-20">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M20 20c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8 8 3.6 8 8zm0-20c0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8 8 3.6 8 8z"/%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white py-20 mt-20">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-teal-900/20"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.3),transparent_50%)] opacity-50"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
