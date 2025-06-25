@@ -28,7 +28,12 @@ const Navigation = () => {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="/lovable-uploads/fe10cbb1-35aa-4815-9109-c0a8aa3d44db.png" 
+            alt="The Analyst's Journey Logo" 
+            className="h-10 w-10 md:h-12 md:w-12"
+          />
           <h1 className="text-slate-900 font-bold text-xl md:text-2xl">
             The Analyst's Journey
           </h1>
