@@ -41,6 +41,12 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <Link
+            to="/store"
+            className="text-slate-700 font-medium hover:text-teal-600 transition-colors"
+          >
+            Learning Store
+          </Link>
           <a
             href="#featured"
             className="text-slate-700 font-medium hover:text-teal-600 transition-colors"
@@ -69,6 +75,13 @@ const Navigation = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 px-6 animate-fade-in z-50">
           <nav className="flex flex-col space-y-4">
+            <Link
+              to="/store"
+              className="text-slate-700 font-medium py-2 hover:text-teal-600 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Learning Store
+            </Link>
             <a
               href="#featured"
               className="text-slate-700 font-medium py-2 hover:text-teal-600 transition-colors"
